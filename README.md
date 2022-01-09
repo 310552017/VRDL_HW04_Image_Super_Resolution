@@ -20,17 +20,12 @@ To reproduct the testing prediction, please follow the steps below:
 requirement.txt contains all packages version of Python
 
 ## Dataset
-- “Transfer_mask_To_json.ipynb” which can transfer mask image file to .json file. 
-- I transfer the file on google colab and save on the google drive , then download the json file to my computer to train the model.
-1. Download the dataset from https://drive.google.com/file/d/1nEJ7NTtHcCHNQqUXaoPk55VH3Uwh4QGG/view.
-2. Upload unzipped file "dataset.zip"、"Transfer_mat_To_csv.ipynb" to google drive in the same folder.
-3. Run the file "Transfer_mat_To_csv.ipynb" you will get a "annotations.json" file.
-4. Download the file "annotations.json".
-
-
+- The training dataset contains 291 high resolution images.
+- I transfer the training data to .h5 file to train the model.
+- Run generate_train.m and you will get a file which is named as train.h5.
 
 ## Training
-- Download the dataset which is uploaded by me and put it in the same file with "VRDL_HW03.ipynb" and "annotations.json".
+- Download the dataset train.h5 according to your path and run the file main_vdsr.py.
 - Run the files "VRDL_HW03.ipynb" will start to train the model and save it as "model_final.pth".
 - Remember to replace the root of the image file with your own root.
 

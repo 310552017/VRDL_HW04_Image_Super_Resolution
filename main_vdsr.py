@@ -1,4 +1,5 @@
-import argparse, os
+import argparse
+import os
 import torch
 import random
 import torch.backends.cudnn as cudnn
@@ -10,7 +11,7 @@ from vdsr import Net
 from dataset import DatasetFromHdf5
 import time
 import os
-os.environ["CUDA_VISIBLE_DEVICES"]="0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 # Training settings
 parser = argparse.ArgumentParser(description="PyTorch VDSR")
@@ -30,8 +31,7 @@ parser.add_argument(
     "--step",
     type=int,
     default=10,
-    help=
-    "Sets the learning rate to the initial LR decayed by momentum every n epochs, Default: n=10"
+    help="Sets the lr to the initial LR decayed by momentum every n epochs"
 )
 parser.add_argument("--cuda", action="store_true", help="Use cuda?")
 parser.add_argument("--resume",
@@ -139,7 +139,7 @@ def main():
 
 
 def adjust_learning_rate(optimizer, epoch):
-    """Sets the learning rate to the initial LR decayed by 10 every 10 epochs"""
+    """Sets the lr to the initial LR decayed by 10 every 10 epochs"""
     lr = opt.lr * (0.1**(epoch // opt.step))
     return lr
 

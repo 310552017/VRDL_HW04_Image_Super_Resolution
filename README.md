@@ -66,8 +66,9 @@ Model | learning rate | Training epochs | Batch size
 CNN model | 0.001 | 25 | 750
 
 ### Link of my trained model
-- The model which training with 100000 iterations：https://drive.google.com/file/d/14FpmiZiJ1SdBGayvGkJAg-5zSRXWL0jq/view?usp=sharing
-- The model's training json file :https://drive.google.com/file/d/1Gp5-SdGiGUjhDb22cIQgHC0VIneMSgXY/view?usp=sharing
+- The model which training with 25 epochs：https://drive.google.com/file/d/1VNv_sy6L-Wn7-vll1GpR3MF_F-5tkNPA/view?usp=sharing
+- The model which training with 50 epochs：
+- The model's training h5 file :
 
 ### Inference
 Load the trained model parameters without retraining again.

@@ -2,11 +2,12 @@ import torch
 from torch.autograd import Variable
 from PIL import Image
 import numpy as np
-import time, math
+import time
+import math
 import warnings
 import os
 import argparse
-os.environ["CUDA_VISIBLE_DEVICES"]="0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 warnings.filterwarnings("ignore")
 

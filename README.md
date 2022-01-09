@@ -31,7 +31,7 @@ requirement.txt contains all packages version of Python
 ```bash
 python main_vdsr.py 
 ```
-- ```bash
+```bash
 usage: main_vdsr.py [-h] [--batchSize BATCHSIZE] [--nEpochs NEPOCHS] [--lr LR]
                [--step STEP] [--cuda] [--resume RESUME]
                [--start-epoch START_EPOCH] [--clip CLIP] [--threads THREADS]

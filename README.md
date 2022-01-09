@@ -54,12 +54,16 @@ optional arguments:
                         path to pretrained model (default: none)
   --gpus GPUS           gpu ids (default: 0)
 ```
+An example of training usage is shown as follows:
+```
+python main_vdsr.py --cuda --gpus 0
+```
 
 The training parameters are:
 
-Model | learning rate | Training iterations | Batch size
+Model | learning rate | Training epochs | Batch size
 ------------------------ | ------------------------- | ------------------------- | -------------------------
-MaskRCNN_resnet101_fpn | 0.00025 | 100000 | 2
+CNN model | 0.001 | 25 | 750
 
 ## Testing
 - "VRDL_HW03.ipynb" has the code that can use the model which is saved above to predict the testing images and save the prediction result as json files according to coco set rules.

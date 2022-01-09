@@ -1,21 +1,23 @@
 # VRDL_HW04_Image_Super_Resolution
-Nuclear segmentation dataset contains 24 training images with 14,598 nuclear and 6 test images with 2,360 nuclear.
-Train an instance segmentation model to detect and segment all the nuclei in the image.
-No external data should be used!
+Dataset:
+Training set: 291 high-resolution images
+Testing set: 14 low-resolution images
+Train your model to reconstruct a high-resolution image from a low-resolution input
+Pre-trained model is NOT allowed!
+
 
 ## Coding Environment
-- Jupyter Notebook
+- Python
 
 ## Reproducing Submission
 To reproduct the testing prediction, please follow the steps below:
-1. [Jupyter Notebook environment](#environment)
+1. [Environment](#environment)
 2. [Dataset](#dataset)
 3. [Training](#training)
 4. [Testing](#testing)
 
 ## Environment
-requirement.txt contains all packages version of Jupyter Notebook
-- notebook 6.1.5  
+requirement.txt contains all packages version of Python
 
 ## Dataset
 - “Transfer_mask_To_json.ipynb” which can transfer mask image file to .json file. 

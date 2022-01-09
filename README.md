@@ -1,10 +1,10 @@
 # VRDL_HW04_Image_Super_Resolution
--Dataset:
+- Dataset:
 Training set: 291 high-resolution images
 Testing set: 14 low-resolution images
 Train your model to reconstruct a high-resolution image from a low-resolution input
 Pre-trained model is NOT allowed!
--Reference github: https://github.com/twtygqyy/pytorch-vdsr
+- Reference github: https://github.com/twtygqyy/pytorch-vdsr
 
 ## Coding Environment
 - Python

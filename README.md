@@ -67,13 +67,12 @@ CNN model | 0.001 | 25 | 750
 
 ### Link of my trained model
 - The model which training with 25 epochs：https://drive.google.com/file/d/1VNv_sy6L-Wn7-vll1GpR3MF_F-5tkNPA/view?usp=sharing
-- The model which training with 50 epochs：https://drive.google.com/file/d/10llzJm36_vNjKq0Z1XU4tiFvoUSVI7HM/view?usp=sharing
 - The model's training h5 file：https://drive.google.com/file/d/1Mj9O2x2kcv3yiqL9jciKpSP4HwR4_U7k/view?usp=sharing
 
 ### Inference
 Load the trained model parameters without retraining again.
 
-“model_epoch_25.pth” or “model_epoch_50.pth” need to be downloaded to your own device.
+“model_epoch_25.pth” need to be downloaded to your own device.
 
 To do inference, run the following code and set the paths to the folders of input and output images.
 ```bash

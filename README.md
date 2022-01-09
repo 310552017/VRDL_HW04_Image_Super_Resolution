@@ -26,8 +26,34 @@ requirement.txt contains all packages version of Python
 
 ## Training
 - Download the dataset train.h5 according to your path and run the file main_vdsr.py.
-- Run the files "VRDL_HW03.ipynb" will start to train the model and save it as "model_final.pth".
-- Remember to replace the root of the image file with your own root.
+- To train the model, run the code as follow.
+- The model weight will be saved in `checkpoint/` folder.
+```bash
+python main_vdsr.py 
+```
+- ```bash
+usage: main_vdsr.py [-h] [--batchSize BATCHSIZE] [--nEpochs NEPOCHS] [--lr LR]
+               [--step STEP] [--cuda] [--resume RESUME]
+               [--start-epoch START_EPOCH] [--clip CLIP] [--threads THREADS]
+               [--momentum MOMENTUM] [--weight-decay WEIGHT_DECAY]
+               [--pretrained PRETRAINED] [--gpus GPUS]
+               
+optional arguments:
+  -h, --help            Show this help message and exit
+  --batchSize           Training batch size
+  --nEpochs             Number of epochs to train for
+  --lr                  Learning rate. Default=0.01
+  --step                Learning rate decay, Default: n=10 epochs
+  --cuda                Use cuda
+  --resume              Path to checkpoint
+  --clip                Clipping Gradients. Default=0.4
+  --threads             Number of threads for data loader to use Default=1
+  --momentum            Momentum, Default: 0.9
+  --weight-decay        Weight decay, Default: 1e-4
+  --pretrained PRETRAINED
+                        path to pretrained model (default: none)
+  --gpus GPUS           gpu ids (default: 0)
+```
 
 The training parameters are:
 

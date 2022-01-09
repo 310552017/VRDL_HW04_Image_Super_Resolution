@@ -73,5 +73,9 @@ CNN model | 0.001 | 25 | 750
 ### Inference
 Load the trained model parameters without retraining again.
 
-“model_epoch_25.pth” or “model_epoch_50.pth” need to be download to your own device and run “inference.py” you will get the results as json file.
-“model_final.pth” need to be put in the folder ./output/ that contains “inference.ipynb”.
+“model_epoch_25.pth” or “model_epoch_50.pth” need to be download to your own device.
+
+To do inference, run the following code and set the pathes to the folders of  input and output images.
+```bash
+python inference.py --cuda --model {path to model weight}
+```
